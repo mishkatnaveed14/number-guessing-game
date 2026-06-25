@@ -4,6 +4,16 @@
     --Accent: #79c2d0;
     --Light-Background: #bbe4e9;
 }
+
+body {
+    background:
+        linear-gradient(135deg,
+            #c5ebf1 0%,
+            #9fdcea 35%,
+            #78cde0 70%,
+            #5fbdd5 100%);
+}
+
 /* nav bar  */
 .navbar-brand {
     font-size: 1.6rem;
@@ -16,11 +26,13 @@
     height: 48px;
     object-fit: contain;
 }
+
 .navbar-links {
     display: flex;
     justify-content: center;
     flex: 1;
 }
+
 .nav-active {
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
@@ -35,46 +47,48 @@
 .nav-active i {
     font-size: 1.2rem;
 }
+
 .custom-navbar {
     background: var(--Light-Background);
     padding: 12px 20px;
 }
 
-.custom-navbar .container-fluid{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
+.custom-navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.nav-wrapper{
-    flex:1;
-    display:flex;
-    justify-content:center;
+.nav-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
-.navbar-nav{
-    display:flex;
-    flex-direction:row !important;
-    align-items:center;
-    gap:12px;
-    flex-wrap:nowrap;
+.navbar-nav {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
 }
 
-.nav-link{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    padding:12px 18px !important;
-    border-radius:14px;
-    white-space:nowrap;
-    transition:.3s;
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px !important;
+    border-radius: 14px;
+    white-space: nowrap;
+    transition: .3s;
 }
 
-.nav-active{
-    background:rgba(255,255,255,.35);
-    backdrop-filter:blur(10px);
+.nav-active {
+    background: rgba(255, 255, 255, .35);
+    backdrop-filter: blur(10px);
 }
+
 /* -----------------nav bar end---------------- */
 /* -----mode toggle---------- */
 .dark_mode {
@@ -114,4 +128,76 @@
 .dark_mode #theme_btn .circle {
     transform: translateX(34px);
 }
+
 /* -----------end--------------- */
+/* rgba(255, 255, 255, 0.25 */
+/* .game-card{
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.game-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.25),
+        transparent
+    );
+    transition: 0.8s;
+    overflow-x: hidden;
+}
+.game-card{
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+} */
+
+/*    container number guess */
+.hero-card {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 20px;
+    box-shadow:
+        0 8px 32px rgba(31, 38, 135, 0.12);
+    transition: all .4s ease;
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+    max-width: 820px;
+    min-height: 160px;
+    margin: 80px auto;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.hero-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.12),
+        0 0 35px rgba(121, 194, 208, .35);
+}
+/* ------end----------- */
