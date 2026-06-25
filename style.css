@@ -91,44 +91,87 @@ body {
 
 /* -----------------nav bar end---------------- */
 /* -----mode toggle---------- */
-.dark_mode {
-    background-color: black;
+.dark_mode{
+    background: #5585b5;
+    transition: .4s ease;
+}
+.dark_mode nav{
+    background: #4a76a1 !important;
+}
+.dark_mode .hero-card,
+.dark_mode .game-card{
+    background: rgba(0,0,0,.15);
+    border: 1px solid rgba(255,255,255,.15);
 
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+}
+.dark_mode h1,
+.dark_mode h2,
+.dark_mode h3,
+.dark_mode h4,
+.dark_mode h5,
+.dark_mode h6,
+.dark_mode span,
+.dark_mode p{
+    color: #ffffff;
+}
+.dark_mode .nav-link{
+    color: white;
 }
 
-.dark_mode #hd-2 {
-    color: whitesmoke;
+.dark_mode .nav-active{
+    background: rgba(255,255,255,.15);
+}
+.dark_mode .custom-footer{
+    background: rgba(0,0,0,.15);
+    border-top: 1px solid rgba(255,255,255,.1);
 }
 
-#theme_btn {
-    width: 70px;
-    height: 35px;
-    border: none;
-    border-radius: 30px;
-    background: var(--Secondary);
-    position: relative;
-    cursor: pointer;
+.dark_mode .footer-text{
+    color: white;
 }
 
-.circle {
-    width: 28px;
-    height: 28px;
-    background: var(--Light-Background);
-    border-radius: 50%;
-    position: absolute;
-    left: 4px;
-    top: 3.5px;
-    transition: 0.3s;
+.dark_mode .footer-logo span{
+    color: white !important;
 }
 
-.dark_mode #theme_btn {
-    background: #444;
+.dark_mode .footer-social a{
+    color: white;
+}
+.dark_mode .difficulty-info p,
+.dark_mode .hero-subtitle{
+    color: rgba(255,255,255,.8);
+}
+#theme_btn{
+    width:70px;
+    height:35px;
+    border:none;
+    border-radius:30px;
+    background:#53a8b6;
+    position:relative;
+    cursor:pointer;
+    transition:.3s;
 }
 
-.dark_mode #theme_btn .circle {
-    transform: translateX(34px);
+.circle{
+    width:28px;
+    height:28px;
+    background:white;
+    border-radius:50%;
+    position:absolute;
+    left:4px;
+    top:3.5px;
+    transition:.3s;
 }
 
+.dark_mode #theme_btn{
+    background:#224364;
+}
+
+.dark_mode #theme_btn .circle{
+    transform:translateX(34px);
+}
 /* -----------end--------------- */
 /*    container number guess */
 .hero-card {
