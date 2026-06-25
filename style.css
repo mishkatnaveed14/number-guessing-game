@@ -445,3 +445,19 @@ body {
 .stat-box p{
     color:#6c757d;
 }
+/* stats color */
+.stat-box:nth-child(1) i{
+    color:#5585b5;
+}
+
+.stat-box:nth-child(2) i{
+    color:#ff4fa1;
+}
+
+.stat-box:nth-child(3) i{
+    color:#ffb400;
+}
+
+.stat-box:nth-child(4) i{
+    color:#ff6a00;
+}
