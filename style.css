@@ -265,6 +265,7 @@ body {
 
 .medium{
     border: 2px solid #facc15;
+        width: 140px !important;
     color: #854d0e;
 }
 
