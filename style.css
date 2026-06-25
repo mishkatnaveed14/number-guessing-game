@@ -478,3 +478,25 @@ body {
     margin-bottom:25px;
 }
 /* input */
+.guess-input{
+    width:100%;
+    max-width:400px;
+
+    height:70px;
+
+    border:none;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    font-size:1.8rem;
+
+    background:rgba(255,255,255,.35);
+
+    backdrop-filter:blur(10px);
+
+    outline:none;
+
+    margin-bottom:30px;
+}
