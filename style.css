@@ -501,3 +501,35 @@ body {
     margin-bottom:30px;
 }
 /* button */
+.btn-group-custom{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+/* guess button */
+.guess-btn{
+    border:none;
+
+    padding:16px 40px;
+
+    border-radius:18px;
+
+    font-size:1.3rem;
+
+    font-weight:600;
+
+    color:white;
+
+    background:linear-gradient(
+    135deg,
+    #5585b5,
+    #53a8b6
+    );
+
+    transition:.3s;
+}
+
+.guess-btn:hover{
+    transform:translateY(-3px);
+}
