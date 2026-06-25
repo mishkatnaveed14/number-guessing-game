@@ -295,3 +295,56 @@ body {
     margin-bottom: 5px;
 }
 /* game card end */
+/* -----------footer--------- */
+.custom-footer{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,.25);
+
+    padding: 20px 30px;
+    margin-top: 80px;
+}
+
+.custom-footer .container-fluid{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.footer-logo img{
+    width:40px;
+    height:40px;
+}
+
+.footer-logo span{
+    font-size:1.8rem;
+    font-weight:600;
+    color:#000;
+}
+
+.footer-text{
+    font-size:1.2rem;
+    color:#3c434c;
+}
+
+.footer-social{
+    display:flex;
+    gap:15px;
+}
+
+.footer-social a{
+    color:#224364;
+    font-size:1.5rem;
+    transition:.3s;
+}
+
+.footer-social a:hover{
+    transform:translateY(-3px);
+}
+/* end */
