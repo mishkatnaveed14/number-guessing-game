@@ -212,18 +212,13 @@ body {
 .game-card {
     max-width: 800px;
     min-height: 500px;
-
     margin: 0 auto;
-
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 35px;
-
     padding: 50px 30px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
