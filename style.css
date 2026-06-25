@@ -21,19 +21,6 @@
     justify-content: center;
     flex: 1;
 }
-.custom-nav,
-.nav-active {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #000;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 12px 18px !important;
-    border-radius: 14px;
-    transition: 0.3s ease;
-}
-
 .nav-active {
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
@@ -48,7 +35,37 @@
 .nav-active i {
     font-size: 1.2rem;
 }
+.custom-navbar {
+    background: var(--Light-Background);
+    padding: 12px 20px;
+}
 
+.custom-navbar .container-fluid{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.nav-wrapper{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.navbar-nav{
+    display:flex;
+    flex-direction:row !important;
+    align-items:center;
+    gap:12px;
+    flex-wrap:nowrap;
+}
+
+
+.nav-active{
+    background:rgba(255,255,255,.35);
+    backdrop-filter:blur(10px);
+}
 /* -----mode toggle---------- */
 .dark_mode {
     background-color: black;
