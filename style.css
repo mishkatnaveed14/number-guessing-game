@@ -3,3 +3,39 @@ h1{
     margin: 80px 0px;
     font-size: 40px;
 }
+.dark_mode{
+    background-color: black;
+  
+}
+.dark_mode #hd-2{
+      color: whitesmoke;
+}
+
+#theme_btn{
+    width: 70px;
+    height: 35px;
+    border: none;
+    border-radius: 30px;
+    background: #ccc;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle{
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 3.5px;
+    transition: 0.3s;
+}
+
+.dark_mode #theme_btn{
+    background: #444;
+}
+
+.dark_mode #theme_btn .circle{
+    transform: translateX(34px);
+}
