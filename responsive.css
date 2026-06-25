@@ -60,6 +60,23 @@
     .footer-text{
         font-size:1rem;
     }
+    /* game panel */
+      .game-panel{
+        padding:25px;
+    }
+
+    .stats-row{
+        justify-content:center;
+    }
+
+    .stat-box{
+        min-width:140px;
+    }
+
+    .guess-input{
+        height:60px;
+        font-size:1.3rem;
+    }
 }
 
 /* ---------- Small Mobile ---------- */
