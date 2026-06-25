@@ -1,29 +1,65 @@
-h1{
-    text-align: center;
-    margin: 80px 0px;
-    font-size: 40px;
+:root {
+    --Primary: #5585b5;
+    --Secondary: #53a8b6;
+    --Accent: #79c2d0;
+    --Light-Background: #bbe4e9;
 }
-.navbar-brand{
-    font-size: 1.4rem;
+
+.navbar-brand {
+    font-size: 1.6rem;
     font-weight: 700;
     color: #5585b5 !important;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 48px;
     height: 48px;
     object-fit: contain;
 }
-/* -----mode toggle---------- */
-.dark_mode{
-    background-color: black;
-  
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
-.dark_mode #hd-2{
-      color: whitesmoke;
+.custom-nav,
+.nav-active {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 18px !important;
+    border-radius: 14px;
+    transition: 0.3s ease;
 }
 
-#theme_btn{
+.nav-active {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.custom-nav:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+}
+
+.custom-nav i,
+.nav-active i {
+    font-size: 1.2rem;
+}
+
+/* -----mode toggle---------- */
+.dark_mode {
+    background-color: black;
+
+}
+
+.dark_mode #hd-2 {
+    color: whitesmoke;
+}
+
+#theme_btn {
     width: 70px;
     height: 35px;
     border: none;
@@ -33,7 +69,7 @@ h1{
     cursor: pointer;
 }
 
-.circle{
+.circle {
     width: 28px;
     height: 28px;
     background: white;
@@ -44,11 +80,12 @@ h1{
     transition: 0.3s;
 }
 
-.dark_mode #theme_btn{
+.dark_mode #theme_btn {
     background: #444;
 }
 
-.dark_mode #theme_btn .circle{
+.dark_mode #theme_btn .circle {
     transform: translateX(34px);
 }
-/* -------------------------- */
+
+/* -----------end--------------- */

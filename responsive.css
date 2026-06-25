@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+
+    .navbar .container-fluid {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-brand span {
+        display: none; /* optional */
+    }
+
+    .navbar-nav {
+        flex-direction: row !important;
+        gap: 6px !important;
+        flex-wrap: nowrap;
+    }
+
+    .nav-link {
+        padding: 8px 10px !important;
+        font-size: 0.9rem;
+    }
+
+    .nav-link i {
+        font-size: 1rem;
+    }
+}
