@@ -478,17 +478,11 @@ body {
 /* mode badge */
 .mode-badge {
     display: inline-block;
-
     padding: 10px 24px;
-
     border-radius: 30px;
-
     background: #8cf0a9;
-
     color: #24a148;
-
     font-weight: 600;
-
     margin-bottom: 25px;
 }
 
