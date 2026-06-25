@@ -4,7 +4,7 @@
     --Accent: #79c2d0;
     --Light-Background: #bbe4e9;
 }
-
+/* nav bar  */
 .navbar-brand {
     font-size: 1.6rem;
     font-weight: 700;
@@ -61,11 +61,21 @@
     flex-wrap:nowrap;
 }
 
+.nav-link{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 18px !important;
+    border-radius:14px;
+    white-space:nowrap;
+    transition:.3s;
+}
 
 .nav-active{
     background:rgba(255,255,255,.35);
     backdrop-filter:blur(10px);
 }
+/* -----------------nav bar end---------------- */
 /* -----mode toggle---------- */
 .dark_mode {
     background-color: black;
@@ -81,7 +91,7 @@
     height: 35px;
     border: none;
     border-radius: 30px;
-    background: #ccc;
+    background: var(--Secondary);
     position: relative;
     cursor: pointer;
 }
@@ -89,7 +99,7 @@
 .circle {
     width: 28px;
     height: 28px;
-    background: white;
+    background: var(--Light-Background);
     border-radius: 50%;
     position: absolute;
     left: 4px;
@@ -104,5 +114,4 @@
 .dark_mode #theme_btn .circle {
     transform: translateX(34px);
 }
-
 /* -----------end--------------- */
