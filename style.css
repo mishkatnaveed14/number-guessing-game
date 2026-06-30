@@ -401,6 +401,7 @@ body {
     padding: 40px;
     text-align: center;
     transition: .4s;
+    display: none;
 }
 
 .game-panel:hover {

@@ -108,86 +108,83 @@
         </div>
     </section>
     <!-- game card end!! -->
-     <!-- footer  -->
-      <footer class="custom-footer">
-    <div class="container-fluid">
+    <!--  mode ui -->
+    <div class="game-panel mode">
 
-        <div class="footer-logo">
-            <img src="./images/number-guess.png" alt="logo">
-            <span style=" color:#224364;">Number Guess Game</span>
+        <div class="stats-row">
+
+            <div class="stat-box">
+                <i class="bi bi-stopwatch"></i>
+                <h3 id="timer">49s</h3>
+                <p>Time</p>
+            </div>
+
+            <div class="stat-box">
+                <i class="bi bi-heart"></i>
+                <h3 id="lives">7</h3>
+                <p>Lives</p>
+            </div>
+
+            <div class="stat-box">
+                <i class="bi bi-trophy"></i>
+                <h3 id="score">0</h3>
+                <p>Score</p>
+            </div>
+
+            <div class="stat-box">
+                <i class="bi bi-lightning"></i>
+                <h3 id="attempts">0</h3>
+                <p>Attempts</p>
+            </div>
+
         </div>
 
-        <div class="footer-text">
-            © 2026 Number Guess. All rights reserved.
+        <div class="mode-badge" id="modeText">
+            Easy Mode (1-50)
         </div>
 
-        <div class="footer-social">
-            <a href="#"><i class="bi bi-github"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+        <input type="number" id="guessInput" class="guess-input" placeholder="Enter your guess (1-50)">
+
+        <div class="btn-group-custom">
+
+            <button id="guessBtn" class="guess-btn">
+                <i class="bi bi-play"></i>
+                Guess!
+            </button>
+
+            <button id="resetBtn" class="reset-btn">
+                <i class="bi bi-arrow-counterclockwise"></i>
+                Reset
+            </button>
+
         </div>
+
+        <div id="message"></div>
 
     </div>
-</footer>
-<!-- end -->
+    <!-- footer  -->
+    <footer class="custom-footer">
+        <div class="container-fluid">
 
-<div class="game-panel mode" >
+            <div class="footer-logo">
+                <img src="./images/number-guess.png" alt="logo">
+                <span style=" color:#224364;">Number Guess Game</span>
+            </div>
 
-    <div class="stats-row">
+            <div class="footer-text">
+                © 2026 Number Guess. All rights reserved.
+            </div>
 
-        <div class="stat-box">
-            <i class="bi bi-stopwatch"></i>
-            <h3 id="timer">49s</h3>
-            <p>Time</p>
+            <div class="footer-social">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+
         </div>
+    </footer>
+    <!-- end -->
 
-        <div class="stat-box">
-            <i class="bi bi-heart"></i>
-            <h3 id="lives">7</h3>
-            <p>Lives</p>
-        </div>
 
-        <div class="stat-box">
-            <i class="bi bi-trophy"></i>
-            <h3 id="score">0</h3>
-            <p>Score</p>
-        </div>
-
-        <div class="stat-box">
-            <i class="bi bi-lightning"></i>
-            <h3 id="attempts">0</h3>
-            <p>Attempts</p>
-        </div>
-
-    </div>
-
-    <div class="mode-badge" id="modeText">
-        Easy Mode (1-50)
-    </div>
-
-    <input
-        type="number"
-        id="guessInput"
-        class="guess-input"
-        placeholder="Enter your guess (1-50)"
-    >
-
-    <div class="btn-group-custom">
-
-        <button id="guessBtn" class="guess-btn">
-            <i class="bi bi-play"></i>
-            Guess!
-        </button>
-
-        <button id="resetBtn" class="reset-btn">
-            <i class="bi bi-arrow-counterclockwise"></i>
-            Reset
-        </button>
-
-    </div>
-
-    <div id="message"></div>
-
-</div>
 
 
 
