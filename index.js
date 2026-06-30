@@ -44,6 +44,7 @@ easy.addEventListener("click", function () {
 
   secretnum = Math.floor(Math.random() * maxRange) + 1;
   console.log("Easy Secret Number: " + secretNumber);
+  strt_timer()
 });
 // medium k click pr kam
 medium.addEventListener("click", function () {
@@ -83,5 +84,41 @@ guessBtn.addEventListener("click", function () {
   if (user_input === secretnum) {
     message.textContent = `🎉🎉 Mubarak ho! Sahi guess kiya! Target number ${secretNumber} hi tha.`;
     message.style.color = "#24a148";
+    score = lives * 100;
+    scoreDisplay.textContent = score;
+    guessInput.disabled = true;
+    guessBtn.disabled = true;
+  } else if (user_input > secretnum) {
+    message.textContent = "📈 Too High! Thoda chota number try karein.";
+    message.style.color = "#854d0e";
+    livesDisplay.textContent = lives;
+  } else {
+    message.textContent = "📉 Too Low! Thoda bara number try karein.";
+    message.style.color = "#854d0e";
+    lives--;
+    livesDisplay.textContent = lives;
   }
+  if (lives === 0) {
+    message.textContent = `💥 Game Over! Aap ki saari lives khatam ho gayin. Sahi number ${secretNumber} tha.`;
+    message.style.color = "#9c1616";
+
+    guessInput.disabled = true;
+    guessBtn.disabled = true;
+  }
+  guessInput.value = "";
 });
+// timer
+function strt_timer() {
+  clearInterval(timeIntervel);
+  timeIntervel = setInterval(function () {
+    timer--;
+    timerDisplay.textContent = timer + "s";
+    if (timer === 0) {
+      clearInterval(timerInterval); // Timer ko rok do
+      message.textContent = `⏰ Time Out! Waqt khatam ho gaya. Sahi number ${secretNumber} tha.`;
+      message.style.color = "#9c1616";
+      guessInput.disabled = true;
+      guessBtn.disabled = true;
+    }
+  }, 1000);
+}
