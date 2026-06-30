@@ -71,3 +71,9 @@ hard.addEventListener("click",function () {
  secretnum = Math.floor(Math.random() * maxRange) + 1
  console.log("hard Secret Number: " + secretNumber);
 })
+// guess button 
+guessBtn.addEventListener("click", function(){
+
+  let user_input = parseInt(guessInput.value)
+  
+})
