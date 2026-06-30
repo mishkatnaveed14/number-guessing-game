@@ -15,6 +15,8 @@ let attempt = 0
 
 
 let mode = document.querySelector(".mode")
+let mode2 = document.querySelector(".game-panel-2")
+let mode3 = document.querySelector(".game-panel-3")
 let selection_panel = document.querySelector(".game-card")
 
 let easy = document.querySelector(".easy")
@@ -48,10 +50,10 @@ easy.addEventListener("click",function () {
 // medium k click pr kam
 medium.addEventListener("click",function () {
  selection_panel.style.display= "none"
- mode.style.display = "block"
+ mode2.style.display = "block"
  maxRange = 100
- lives = 7
- timer = 60
+ lives = 5
+ timer = 45
  attempt= 0
 
  secretnum = Math.floor(Math.random() * maxRange) + 1
@@ -60,7 +62,7 @@ medium.addEventListener("click",function () {
 // hard k click par kam
 hard.addEventListener("click",function () {
  selection_panel.style.display= "none"
- mode.style.display = "block"
+ mode3.style.display = "block"
  maxRange = 500
  lives = 3
  timer = 30

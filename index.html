@@ -109,13 +109,14 @@
     </section>
     <!-- game card end!! -->
     <!--  mode ui -->
+      <!-- easy -->
     <div class="game-panel mode">
 
         <div class="stats-row">
 
             <div class="stat-box">
                 <i class="bi bi-stopwatch"></i>
-                <h3 id="timer">49s</h3>
+                <h3 id="timer">60</h3>
                 <p>Time</p>
             </div>
 
@@ -141,6 +142,114 @@
 
         <div class="mode-badge" id="modeText">
             Easy Mode (1-50)
+        </div>
+
+        <input type="number" id="guessInput" class="guess-input" placeholder="Enter your guess (1-50)">
+
+        <div class="btn-group-custom">
+
+            <button id="guessBtn" class="guess-btn">
+                <i class="bi bi-play"></i>
+                Guess!
+            </button>
+
+            <button id="resetBtn" class="reset-btn">
+                <i class="bi bi-arrow-counterclockwise"></i>
+                Reset
+            </button>
+
+        </div>
+
+        <div id="message"></div>
+
+    </div>
+    <!-- medium -->
+    <div class="game-panel-2 mode">
+
+        <div class="stats-row">
+
+            <div class="stat-box">
+                <i class="bi bi-stopwatch"></i>
+                <h3 id="timer">45</h3>
+                <p>Time</p>
+            </div>
+
+            <div class="stat-box">
+                <i class="bi bi-heart"></i>
+                <h3 id="lives">5</h3>
+                <p>Lives</p>
+            </div>
+
+            <div class="stat-box">
+                <i class="bi bi-trophy"></i>
+                <h3 id="score">0</h3>
+                <p>Score</p>
+            </div>
+
+            <div class="stat-box">
+                <i class="bi bi-lightning"></i>
+                <h3 id="attempts">0</h3>
+                <p>Attempts</p>
+            </div>
+
+        </div>
+
+        <div class="mode-badge" id="modeText">
+            Medium Mode (1-100)
+        </div>
+
+        <input type="number" id="guessInput" class="guess-input" placeholder="Enter your guess (1-50)">
+
+        <div class="btn-group-custom">
+
+            <button id="guessBtn" class="guess-btn">
+                <i class="bi bi-play"></i>
+                Guess!
+            </button>
+
+            <button id="resetBtn" class="reset-btn">
+                <i class="bi bi-arrow-counterclockwise"></i>
+                Reset
+            </button>
+
+        </div>
+
+        <div id="message"></div>
+
+    </div>
+    <!-- hard -->
+    <div class="game-panel-3 mode">
+
+        <div class="stats-row">
+
+            <div class="stat-box">
+                <i class="bi bi-stopwatch"></i>
+                <h3 id="timer">30</h3>
+                <p>Time</p>
+            </div>
+
+            <div class="stat-box">
+                <i class="bi bi-heart"></i>
+                <h3 id="lives">3</h3>
+                <p>Lives</p>
+            </div>
+
+            <div class="stat-box">
+                <i class="bi bi-trophy"></i>
+                <h3 id="score">0</h3>
+                <p>Score</p>
+            </div>
+
+            <div class="stat-box">
+                <i class="bi bi-lightning"></i>
+                <h3 id="attempts">0</h3>
+                <p>Attempts</p>
+            </div>
+
+        </div>
+
+        <div class="mode-badge" id="modeText">
+            Hard Mode (1-500)
         </div>
 
         <input type="number" id="guessInput" class="guess-input" placeholder="Enter your guess (1-50)">
