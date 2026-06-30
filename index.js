@@ -44,7 +44,7 @@ easy.addEventListener("click", function () {
 
   secretnum = Math.floor(Math.random() * maxRange) + 1;
   console.log("Easy Secret Number: " + secretNumber);
-  strt_timer()
+  strt_timer();
 });
 // medium k click pr kam
 medium.addEventListener("click", function () {
@@ -57,6 +57,7 @@ medium.addEventListener("click", function () {
 
   secretnum = Math.floor(Math.random() * maxRange) + 1;
   console.log("medium Secret Number: " + secretNumber);
+  strt_timer();
 });
 // hard k click par kam
 hard.addEventListener("click", function () {
@@ -69,6 +70,7 @@ hard.addEventListener("click", function () {
 
   secretnum = Math.floor(Math.random() * maxRange) + 1;
   console.log("hard Secret Number: " + secretNumber);
+  strt_timer();
 });
 // guess button
 guessBtn.addEventListener("click", function () {
@@ -88,6 +90,7 @@ guessBtn.addEventListener("click", function () {
     scoreDisplay.textContent = score;
     guessInput.disabled = true;
     guessBtn.disabled = true;
+    clearInterval(timeIntervel)
   } else if (user_input > secretnum) {
     message.textContent = "📈 Too High! Thoda chota number try karein.";
     message.style.color = "#854d0e";
@@ -122,3 +125,14 @@ function strt_timer() {
     }
   }, 1000);
 }
+resetBtn.addEventListener("click", function () {
+  clearInterval(timeIntervel);
+  mode.style.display = "none";
+  mode2.style.display = "none";
+  mode3.style.display = "none";
+  selection_panel.style.display = "block";
+  guessInput.disabled = false;
+  guessBtn.disabled = false;
+  guessInput.value = "";
+  message.textContent = "";
+});
