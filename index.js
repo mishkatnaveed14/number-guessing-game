@@ -49,7 +49,7 @@ easy.addEventListener("click",function () {
 medium.addEventListener("click",function () {
  selection_panel.style.display= "none"
  mode.style.display = "block"
- maxRange = 50
+ maxRange = 100
  lives = 7
  timer = 60
  attempt= 0
@@ -61,9 +61,9 @@ medium.addEventListener("click",function () {
 hard.addEventListener("click",function () {
  selection_panel.style.display= "none"
  mode.style.display = "block"
- maxRange = 50
- lives = 7
- timer = 60
+ maxRange = 500
+ lives = 3
+ timer = 30
  attempt= 0
 
  secretnum = Math.floor(Math.random() * maxRange) + 1
